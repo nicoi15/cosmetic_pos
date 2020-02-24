@@ -86,6 +86,25 @@
                 </a>
               </td>
             </tr>
+            <tr>
+              <td>2</td>
+              <td>Enervon Active</td>
+              <td>Enervon</td>
+              <td>333</td>
+              <td>500.00</td>
+              <td class="project-actions text-right">
+                  <a class="btn btn-info btn-sm" href="#">
+                    <i class="fas fa-pencil-alt">
+                    </i>
+                    Edit
+                </a>
+                <a class="btn btn-danger btn-sm" href="#">
+                    <i class="fas fa-trash">
+                    </i>
+                    Delete
+                </a>
+              </td>
+            </tr>
           </tbody>
         </table>
       </div>
