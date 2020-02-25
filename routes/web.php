@@ -21,3 +21,4 @@ Route::get('/login','PagesController@login');
 Route::get('/customer','PagesController@customer');
 Route::get('/product','PagesController@product');
 Route::get('/sales','PagesController@sales');
+Route::get('/home','PagesController@list');

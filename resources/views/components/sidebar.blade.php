@@ -18,6 +18,12 @@
       <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
         
         <li class="nav-item">
+          <a href="home" class="nav-link">
+            <i class="nav-icon fas fa-cash-register"></i>
+            <p>Home</p>
+          </a>
+        </li>
+        <li class="nav-item">
           <a href="product" class="nav-link">
             <i class="nav-icon fas fa-shopping-cart"></i>
             <p>Products</p>
@@ -33,12 +39,6 @@
           <a href="customer" class="nav-link">
             <i class="nav-icon fas fa-user"></i>
             <p>Customers</p>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="customer" class="nav-link">
-            <i class="nav-icon fas fa-cash-register"></i>
-            <p>Cashier</p>
           </a>
         </li>
 
