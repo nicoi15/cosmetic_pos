@@ -25,8 +25,12 @@ Route::get('/login','PagesController@login');
 Route::get('/customer','PagesController@customer');
 Route::get('/product','PagesController@product');
 Route::get('/sales','PagesController@sales');
+<<<<<<< HEAD
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('users', 'UsersController');
+=======
+Route::get('/home','PagesController@list');
+>>>>>>> 279d0134dd7dcd9ebae5eb401aac4abe69edca5a

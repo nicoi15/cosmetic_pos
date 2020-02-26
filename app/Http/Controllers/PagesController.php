@@ -24,4 +24,7 @@ class PagesController extends Controller
     public function sales() {
         return view('pages.sales');
     }
+    public function list() {
+        return view('pages.home');
+    }
 }

@@ -17,6 +17,12 @@
     <nav class="mt-2">
       <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
         <li class="nav-item">
+          <a href="home" class="nav-link">
+            <i class="nav-icon fas fa-cash-register"></i>
+            <p>Home</p>
+          </a>
+        </li>
+        <li class="nav-item">
           <a href="product" class="nav-link">
             <i class="nav-icon fas fa-shopping-cart"></i>
             <p>Products</p>
@@ -34,12 +40,15 @@
             <p>Customers</p>
           </a>
         </li>
+<<<<<<< HEAD
         <li class="nav-item">
           <a href="customer" class="nav-link">
             <i class="nav-icon fas fa-cash-register"></i>
             <p>Sales</p>
           </a>
         </li>
+=======
+>>>>>>> 279d0134dd7dcd9ebae5eb401aac4abe69edca5a
 
       </ul>
     </nav>
