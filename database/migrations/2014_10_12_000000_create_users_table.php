@@ -20,7 +20,7 @@ class CreateUsersTable extends Migration
             $table->string('last_name');  
             $table->string('gender');  
             $table->string('birth_date');  
-            $table->integer('status');  
+            $table->integer('status')->default(1);  
             $table->string('username');  
             $table->string('password');
             $table->timestamps();

@@ -19,7 +19,6 @@ Route::get('/a', function () {
     echo Customer::all();
 });
 
-Route::get('/','PagesController@index');
 Route::get('/dashboard','PagesController@dashboard');
 Route::get('/login','PagesController@login');
 Route::get('/customer','PagesController@customer');
