@@ -13,7 +13,7 @@
                         @csrf
 
                         <div class="form-group row">
-                            <label for="firstName" class="col-md-4 col-form-label text-md-right">{{ __('First Name') }}</label>
+                            <label for="firstName" class="col-md-4 col-form-label text-md-right">First Name</label>
 
                             <div class="col-md-6">
                                 <input id="firstName" type="text" class="form-control @error('firstName') is-invalid @enderror" name="firstName" value="{{ old('firstName') }}" required autocomplete="firstName" autofocus>
@@ -27,7 +27,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="middleName" class="col-md-4 col-form-label text-md-right">{{ __('Middle Name') }}</label>
+                            <label for="middleName" class="col-md-4 col-form-label text-md-right">'Middle Name'</label>
 
                             <div class="col-md-6">
                                 <input id="middleName" type="text" class="form-control @error('middleName') is-invalid @enderror" name="middleName" value="{{ old('middleName') }}" autocomplete="middleName">
@@ -41,7 +41,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="lastName" class="col-md-4 col-form-label text-md-right">{{ __('Last Name') }}</label>
+                            <label for="lastName" class="col-md-4 col-form-label text-md-right">'Last Name'</label>
 
                             <div class="col-md-6">
                                 <input id="lastName" type="text" class="form-control @error('lastName') is-invalid @enderror" name="lastName" value="{{ old('lastName') }}" required autocomplete="lastName">
@@ -56,7 +56,7 @@
 
                         {{-- Ilisan lng ni ug dropdown --}}
                         <div class="form-group row">
-                            <label for="gender" class="col-md-4 col-form-label text-md-right">{{ __('Gender') }}</label>
+                            <label for="gender" class="col-md-4 col-form-label text-md-right">Gender</label>
 
                             <div class="col-md-6">
                                 <input id="gender" type="text" class="form-control @error('gender') is-invalid @enderror" name="gender" value="{{ old('gender') }}" required autocomplete="gender">
@@ -71,7 +71,7 @@
 
                         {{-- Ilisan lng ni ug datepicker --}}
                         <div class="form-group row">
-                            <label for="birthDate" class="col-md-4 col-form-label text-md-right">{{ __('Birth Date') }}</label>
+                            <label for="birthDate" class="col-md-4 col-form-label text-md-right">Birth Date</label>
 
                             <div class="col-md-6">
                                 <input id="birthDate" type="text" class="form-control @error('birthDate') is-invalid @enderror" name="birthDate" value="{{ old('birthDate') }}" required autocomplete="birthDate">
@@ -85,7 +85,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="username" class="col-md-4 col-form-label text-md-right">{{ __('Username') }}</label>
+                            <label for="username" class="col-md-4 col-form-label text-md-right">Username</label>
 
                             <div class="col-md-6">
                                 <input id="username" type="text" class="form-control @error('username') is-invalid @enderror" name="username" value="{{ old('username') }}" required>
@@ -101,7 +101,7 @@
 
 
                         <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
+                            <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
 
                             <div class="col-md-6">
                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
@@ -135,12 +135,13 @@
         </div>
         <div class="col-md-6">
             <div class="card card-primary">
-                <div class="card-header">{{ __('Security Question') }}</div>
+                <div class="card-header">Security Question</div>
 
                 <div class="card-body">
+                    {!! Form::open(['action' => 'UsersController@store', 'method' => 'POST']) !!}
                     <form method="POST" action="{{ route('register') }}">
                         <div class="form-group row">
-                            <label for="question" class="col-md-4 col-form-label text-md-right">{{ __('Question') }}</label>
+                            <label for="question" class="col-md-4 col-form-label text-md-right">Question</label>
                             <div class="col-md-6">
                                 <input id="question" type="text" class="form-control @error('question') is-invalid @enderror" name="question" value="What is your name?" readonly>
                                 
@@ -166,6 +167,11 @@
                             </div>
                         </div>
                     </form>
+                    <div class="form-group row">
+                        {{Form::label('title', 'Title')}}
+                        {{Form::text('title', '', ['class' => 'form-control', 'placeholder' => 'Title'])}}
+                    </div>
+                    {!! Form::close() !!}
                 </div>
             </div>
         </div>
