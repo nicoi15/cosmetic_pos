@@ -40,15 +40,12 @@
             <p>Customers</p>
           </a>
         </li>
-<<<<<<< HEAD
         <li class="nav-item">
           <a href="customer" class="nav-link">
             <i class="nav-icon fas fa-cash-register"></i>
             <p>Sales</p>
           </a>
         </li>
-=======
->>>>>>> 279d0134dd7dcd9ebae5eb401aac4abe69edca5a
 
       </ul>
     </nav>

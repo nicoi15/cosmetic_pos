@@ -9,8 +9,8 @@
       <form method="POST" role="form" action="">
         <div class="card-body">
             <div class="form-group">
-              <label for="firstName">Product ID</label>
-              <input type="text" class="form-control" id="firstName" placeholder="Product ID" readonly>
+              <label for="productId">Product ID</label>
+              <input type="text" class="form-control" id="productId" placeholder="Product ID" readonly>
             </div>
             <div class="form-group">
               <label for="firstName">Name</label>
